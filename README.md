@@ -1,8 +1,27 @@
-# React + Vite
+# Dynamic Feedback Form
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Demo link:
 
-Currently, two official plugins are available:
+Access my site at [dynamic-feedback-form.vercel.app](https://dynamic-feedback-form.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## About The App
+
+This is a feedback form which displays dynamic data by fetching the questions and choices from an API. Displays the user selected choices in the console upon submission. The UI was inspired by google forms.
+
+## Features
+
+- Uses React-Toastify to notify users about different events.
+- Has complete error handling and loading states.
+- This app is unit tested using JEST.
+
+## Screenshots
+
+## Setup
+
+- download or clone the repository
+- run `npm install`
+- run `npm run dev` to run the app locally
+
+## Technologies
+
+This App uses `HTML`, `CSS`, `Javascript`, `ReactJS`, `MaterialUI`and `react-toastify`.
