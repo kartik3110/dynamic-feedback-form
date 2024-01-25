@@ -6,6 +6,8 @@ import CircularProgress from "@mui/material/CircularProgress";
 import Question from "./Question";
 import Error from "./Error";
 import ThankYou from "./ThankYou";
+import { Typography } from "@mui/material";
+import feedbackImg from "../assets/feedback-icon.png";
 
 const apiUrl =
   "https://brijfeedback.pythonanywhere.com/api/get-feedback-questions/?format=json&unitID=1";
@@ -93,8 +95,15 @@ class FeedbackForm extends Component {
     return (
       <>
         <div className="header">
-          <h1>Please provide your valuable feedback</h1>
+          <img src={feedbackImg} style={{ width: "100px" }} />
+          <Typography variant="h4" gutterBottom>
+            Share Your Feedback with Us
+          </Typography>
+          <Typography variant="body1">
+            Help Us Shine Brighter by Sharing Your opinions!
+          </Typography>
         </div>
+
         <div className="form-container">
           <form id="feedback-form" onSubmit={(e) => this.handleSubmit(e)}>
             {questions &&
