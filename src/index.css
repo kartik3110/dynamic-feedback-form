@@ -43,8 +43,16 @@ h1 {
   align-items: center;
 }
 
+.code-paper {
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 25%;
+  width: 50%;
+}
+
 @media (max-width: 700px) {
-  .header {
+  .header,
+  .code-paper {
     width: 80%;
     margin-left: 10%;
   }

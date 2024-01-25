@@ -5,6 +5,7 @@ import Button from "@mui/material/Button";
 import CircularProgress from "@mui/material/CircularProgress";
 import Question from "./Question";
 import Error from "./Error";
+import ThankYou from "./ThankYou";
 
 const apiUrl =
   "https://brijfeedback.pythonanywhere.com/api/get-feedback-questions/?format=json&unitID=1";
@@ -20,6 +21,7 @@ class FeedbackForm extends Component {
       },
       isLoading: false,
       isError: false,
+      isSubmitted: false,
     };
   }
 
@@ -69,18 +71,13 @@ class FeedbackForm extends Component {
       toast.error("Please fill out all fields");
       return;
     }
-    toast.success("Thank you for your feedback!");
-    console.log(this.state.feedback);
+    this.setState({ isSubmitted: true });
   };
 
   render() {
     const { feedbackQuestions: questions, choices } = this.state.fetchedData;
     if (this.state.isError) {
-      return (
-        <div>
-          <Error />
-        </div>
-      );
+      return <Error />;
     }
     if (this.state.isLoading) {
       return (
@@ -88,6 +85,9 @@ class FeedbackForm extends Component {
           <CircularProgress />
         </div>
       );
+    }
+    if (this.state.isSubmitted) {
+      return <ThankYou userData={this.state.feedback} />;
     }
 
     return (
