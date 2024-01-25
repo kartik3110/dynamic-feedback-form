@@ -10,11 +10,13 @@ This is a feedback form which displays dynamic data by fetching the questions an
 
 ## Features
 
+- Fetches dynamic form data allowing user to provide feedback of a product or service. 
 - Uses React-Toastify to notify users about different events.
 - Has complete error handling and loading states.
-- This app is unit tested using JEST.
 
 ## Screenshots
+![Screenshot (115)](https://github.com/kartik3110/dynamic-feedback-form/assets/115152849/55e0ba48-a3cd-4a21-af96-e6560a60c828)
+
 
 ## Setup
 
