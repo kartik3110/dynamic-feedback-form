@@ -1,11 +1,10 @@
 // import "./App.css";
+import { Component } from "react";
 import FeedbackForm from "./components/FeedbackForm";
-function App() {
-  return (
-    <>
-      <FeedbackForm />
-    </>
-  );
+class App extends Component {
+  render() {
+    return <FeedbackForm />;
+  }
 }
 
 export default App;
