@@ -4,10 +4,10 @@ import FeedbackForm from "./components/FeedbackForm";
 class App extends Component {
   render() {
     return (
-      <>
+      <div>
+        <div>hello</div>
         <FeedbackForm />
-        <h1>hello</h1>
-      </>
+      </div>
     );
   }
 }
